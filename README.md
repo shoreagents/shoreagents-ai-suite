@@ -12,10 +12,10 @@ A modern Electron-based central hub application for managing Real Estate BPO app
 
 ## Applications Included
 
-1. **IT App** - System management and infrastructure tools
-2. **Admin App** - Administrative control and management center
-3. **Staff App** - Staff management and scheduling platform
-4. **Nurse App** - Client care and support management system
+1. **ShoreAgents IT Hub** - System management and infrastructure tools
+2. **ShoreAgents Admin Hub** - Administrative control and management center
+3. **ShoreAgents Staff Hub** - Staff management and scheduling platform
+4. **ShoreAgents Care Hub** - Client care and support management system
 
 ## Technology Stack
 

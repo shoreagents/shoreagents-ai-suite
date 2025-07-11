@@ -55,7 +55,7 @@ const getAppColorScheme = (appId: string) => {
         buttonGradient: 'bg-gradient-to-r from-matrix-orange-500 to-matrix-orange-600 hover:from-matrix-orange-600 hover:to-matrix-orange-700',
         shadow: 'hover:shadow-matrix-glow'
       }
-    case 'nurse-app':
+    case 'care-app':
       return {
         cardGradient: 'bg-gradient-to-br from-white to-purple-50/30 dark:from-background dark:to-purple-950/30',
         border: 'border-purple-200/50 dark:border-purple-800/50 hover:border-purple-300 dark:hover:border-purple-700',

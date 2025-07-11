@@ -5,7 +5,7 @@ import { AppState, App } from '@/types'
 const mockApps: App[] = [
   {
     id: 'it-app',
-    name: 'IT App',
+    name: 'ShoreAgents IT Hub',
     description: 'System management and infrastructure tools',
     icon: 'server',
     status: 'available',
@@ -14,7 +14,7 @@ const mockApps: App[] = [
   },
   {
     id: 'admin-app',
-    name: 'Admin App',
+    name: 'ShoreAgents Admin Hub',
     description: 'Administrative control and management center',
     icon: 'shield',
     status: 'available',
@@ -23,7 +23,7 @@ const mockApps: App[] = [
   },
   {
     id: 'staff-app',
-    name: 'Staff App',
+    name: 'ShoreAgents Staff Hub',
     description: 'Staff management and scheduling platform with workflow automation',
     icon: 'users',
     status: 'available',
@@ -31,8 +31,8 @@ const mockApps: App[] = [
     lastUpdated: new Date('2024-01-18')
   },
   {
-    id: 'nurse-app',
-    name: 'Nurse App',
+    id: 'care-app',
+    name: 'ShoreAgents Care Hub',
     description: 'Client care and support management system',
     icon: 'heart',
     status: 'available',
