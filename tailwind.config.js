@@ -6,15 +6,9 @@ module.exports = {
     "./public/index.html",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       colors: {
+        // shadcn/ui semantic colors (referencing CSS variables from globals.css)
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -32,6 +26,10 @@ module.exports = {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
@@ -48,7 +46,17 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Extended ShoreAgents AI Palette
+        
+        // Chart colors
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
+        
+        // AI Color Palettes (using HSL values for better Tailwind compatibility)
         'cyber-green': {
           50: 'hsl(162, 76%, 95%)',
           100: 'hsl(162, 73%, 89%)',
@@ -89,58 +97,12 @@ module.exports = {
           950: 'hsl(15, 86%, 14%)',
         },
       },
-      backgroundImage: {
-        'gradient-cyber': 'var(--gradient-cyber-primary)',
-        'gradient-neural': 'var(--gradient-neural-primary)',
-        'gradient-matrix': 'var(--gradient-matrix-primary)',
-        'gradient-ai-hero': 'var(--gradient-ai-hero)',
-      },
-      boxShadow: {
-        'cyber-glow': 'var(--shadow-cyber-glow)',
-        'neural-glow': 'var(--shadow-neural-glow)',
-        'matrix-glow': 'var(--shadow-matrix-glow)',
-      },
+      
+      // Layout (referencing CSS variables from globals.css)
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: 0 },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
-        },
-        'cyber-pulse': {
-          '0%, 100%': { 
-            opacity: '0.5', 
-            transform: 'scale(1)',
-            boxShadow: '0 0 0 0 hsla(162, 73%, 46%, 0.4)'
-          },
-          '50%': { 
-            opacity: '1', 
-            transform: 'scale(1.05)',
-            boxShadow: '0 0 20px 10px hsla(162, 73%, 46%, 0.1)'
-          },
-        },
-        'neural-shimmer': {
-          '0%': { transform: 'translateX(-100%)' },
-          '100%': { transform: 'translateX(100%)' },
-        },
-        'ai-float': {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-10px)' },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        'cyber-pulse': 'cyber-pulse 3s ease-in-out infinite',
-        'neural-shimmer': 'neural-shimmer 2s infinite',
-        'ai-float': 'ai-float 6s ease-in-out infinite',
       },
     },
   },
