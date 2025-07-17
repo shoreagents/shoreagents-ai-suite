@@ -70,13 +70,8 @@ export const useAppStore = create<AppState>((set, get) => ({
         // Fallback for browser testing
         console.log(`Launching app: ${app.name}`)
         
-        // Show notification
-        if (window.electronAPI) {
-          await window.electronAPI.showNotification(
-            'App Launched',
-            `${app.name} has been launched successfully`
-          )
-        }
+        // Show notification fallback for browser
+        console.log(`App Launched: ${app.name} has been launched successfully`)
       }
       
       // Reset status after a delay (simulating app startup)
